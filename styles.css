@@ -7,13 +7,21 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
     padding: 1.2rem;
+    overflow: hidden;
+}
+
+main {
+    background-color: #eaf0efe1;
+    height: fit-content;
+    border-radius: 0.5rem;
 }
 
 h1 {
@@ -39,7 +47,7 @@ p {
 #swap {
     cursor: pointer;
     position: relative;
-    left: 1rem;
+    left: 1.5rem;
     transform: rotate(0deg);
     transition: 0.2s all;
 }
@@ -94,4 +102,13 @@ input:out-of-range {
 select:focus,
 input:focus {
     outline: none;
+}
+
+select {
+    margin-right: 1rem;
+}
+
+.mon-img {
+    width: 113%;
+    margin-top: -1.2rem;
 }
